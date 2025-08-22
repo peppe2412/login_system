@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             if (mysqli_query($connect, $query)) {
                 $_SESSION['message'] = "Registrazione completata, effettua l'accesso";
-                header('location: login.php');
+                header('location: ../login.php');
                 exit;
             } else {
                 $_SESSION['alert'] = 'Inserisci informazioni valide';
